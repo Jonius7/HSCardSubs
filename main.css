@@ -47,3 +47,8 @@ table {
 	border-spacing: 0;
 }
 
+#showwild {
+    background-color: #4488cc;
+    height: 100px;
+    width: 400px;
+}
