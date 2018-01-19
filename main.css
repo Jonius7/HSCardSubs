@@ -50,5 +50,6 @@ table {
 #showwild {
     background-color: #4488cc;
     height: 100px;
-    width: 400px;
+	width: 400px;
+	display:none;
 }
