@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#showwild").hide();
+    //$("#showwild").hide();
     $("#link1").click(function(){
         if ( $("#showwild").is(":hidden") ) {
             $("#showwild").slideDown(400);
