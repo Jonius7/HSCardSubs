@@ -81,14 +81,40 @@ header a:hover {
 
 #testicons {
 	background-color: #dddddd;
+	padding: 10px;
 }
 
-.seticon {
-	font-weight: bold;
-	height: 30px;
+.card {
+	float: none;
+	margin: 0 0 10px 0;
+}
+
+.icon {
+	float: left;
 	width: 60px;
-	border: 1px solid black;
-	font: Helvetica, Arial, sans-serif;
+	height: 25px;
+	line-height: 25px;
+	
+}
+
+.icon.set {
+	border-radius: 7px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	
+	/*border: 1px solid black;*/
+}
+
+.icon.mana {
+	background-color: #50509B;
+}
+
+.icon.attack {
+	background-color: #FFFF56;
+}
+
+.icon.health {
+	background-color: #FF4242;
 }
 
 /* Footer */

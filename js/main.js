@@ -31,7 +31,8 @@ $(document).ready(function(){
     ]
     
     $("#link1").click(function() {
-        create_icons();
+        setup_requests();
+        /*      
         $.ajax({
             url: 'https://omgvamp-hearthstone-v1.p.mashape.com/cards/search/' + "Amani Berserker", // The URL to the API. You can get this by clicking on "Show CURL example" from an API profile
             type: 'GET', // The HTTP Method
@@ -45,7 +46,28 @@ $(document).ready(function(){
             xhr.setRequestHeader("X-Mashape-Authorization", "gLuJijYjismshLeMgpAkk4Vp3dUOp1vNL1djsnQVPYIKHuFOJV"); // Enter here your Mashape key
             }
         });
+        */
     });
+
+    function api_request(name) {
+        // returns a Javascript Object (converted from JSON object)
+        var obj;
+        $.ajax({
+            url: 'https://omgvamp-hearthstone-v1.p.mashape.com/cards/search/' + name, // The URL to the API. You can get this by clicking on "Show CURL example" from an API profile
+            type: 'GET', // The HTTP Method
+            //data: {}, // Additional parameters here
+            datatype: 'json',
+            success: function(data) {
+                //obj = JSON.stringify(data);
+                console.log(data);
+                create_icons2(data);
+            },
+            error: function(err) { alert(err); },
+            beforeSend: function(xhr) {
+            xhr.setRequestHeader("X-Mashape-Authorization", "gLuJijYjismshLeMgpAkk4Vp3dUOp1vNL1djsnQVPYIKHuFOJV"); // Enter here your Mashape key
+            }
+        });
+    }
 
     var raritytable = [
         {
@@ -93,18 +115,62 @@ $(document).ready(function(){
         }
     ]
 
-    function create_icons() {
-        var order = ["Classic", "Journey to Un'Goro", "Knights of the Frozen Throne"];
-        $.each(order, function(i, value) {
-            var obj = $.grep(seticons, function(e){return e.name == value;});
-            $('#testicons').append('<div class="seticon">' + obj[0].code + '</div>');
-            $('#testicons > div:last').css( {
-                'background-color': obj[0].color
-             });
+    /*function create_icons(data) {
+        var obj = $.grep(seticons, function(e){return e.name == data.cardSet;});
+        $('#testicons').append('<div class="icon set">' + obj[0].code + '</div>');
+        $('#testicons > div:last').css( {
+            'background-color': obj[0].color
         });
+        //Sets margins for first and last elements
+        $('#testicons > div:first').css ( {
+            'margin-top': '0'
+        })
+        $('#testicons > div:last').css ( {
+            'margin-bottom': '0'
+        })
+
         //var obj = $.grep(seticons, function(e){return e.name == "Classic";});
         //alert(obj[0].code);       
     }
+    */
+
+    function setup_requests() {
+        var order = ["Arcanologist", "Amani Berserker", "Beckoner of Evil"];
+        $.each(order, function(i, value) {
+            api_request(value);
+        });
+        //Sets margins for first and last elements
+        /*
+        $('#testicons > div:first').css ( {
+            'margin-top': '0'
+        });
+        $('#testicons > div:last').css ( {
+            'margin-bottom': '0'
+        });
+        */
+        
+        
+    }
+    function create_icons2(data) {
+        console.log("DDE" + data[0]);
+        var om = $.grep(seticons, function(e){return e.name == data[0].cardSet;});
+        $('#testicons').append('<div class="card">');
+        $('#testicons > div:last').append('<div class="icon set">' + om[0].code + '</div>');
+        $('#testicons > div:last > div:last').css( {
+            'background-color': om[0].color
+
+        });
+        $('#testicons > div:last').append('<div class="icon mana">' + data[0].cost +'</div>')
+        .append('<div class="icon attack">' + data[0].attack + '</div>')
+        .append('<div class="icon health">' + data[0].health + '</div>')
+        .append(data[0].name)
+        .append('</div>')
+        .append('<br>');
+
+        //var obj = $.grep(seticons, function(e){return e.name == "Classic";});
+        //alert(obj[0].code);       
+    }
+
     
     function river_crocolisk() {
         
