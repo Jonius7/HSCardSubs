@@ -2,6 +2,19 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBJ8gtcsBlx78XnOFNB-miIqFVUpxiaOPs",
+                authDomain: "hscardsubs.firebaseapp.com",
+                databaseURL: "https://hscardsubs.firebaseio.com",
+                projectId: "hscardsubs",
+                storageBucket: "",
+                messagingSenderId: "857213408745"
+            };
+            firebase.initializeApp(config);
+        </script>
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/main.js"></script>
     </head>
@@ -22,11 +35,14 @@
         </header>
         <section id="cardpanel">
             <div class="container">
-                <h1>Card</h1>
-                <a href="#" id="link1">Similar Cards</a>
-                Bloodfen Raptor -> Crackling Razormaw
-                <div id="showwild">
-                    Raven Idol
+                <h2>River Crocolisk</h2>
+                <div id="similarcards">
+                    <a href="#" id="link1">Similar Cards</a>
+                    curl --get --include 'https://omgvamp-hearthstone-v1.p.mashape.com/cards/search/beckoner%20of%20evil' \
+  -H 'X-Mashape-Key: zRgMhpY4OfmshEWxL4cFstnNtsQwp1O2X5sjsn9xsxtBPk2Ula'
+                    <div id="showwild">
+                        Raven Idol
+                    </div>
                 </div>
             </div>
         </section>
