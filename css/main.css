@@ -19,6 +19,7 @@ body {
   ul{
 	margin: 0;
 	padding: 0;
+	list-style: none;
   }
 
 /* Header */
@@ -51,12 +52,12 @@ header nav {
 	margin-top: 10px;
 }
 header .highlight, header .current a {
-	color: #32a0c2;
+	color: #e2df1f;
 	font-weight: bold;
 }
 header a:hover {
 	color: #cccccc;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 /* Cardpanel */
@@ -76,6 +77,16 @@ header a:hover {
 	font-size: 20px;
 }
 
+
+
+
+/* Icons */
+#testicons {
+	/*text-transform: uppercase;*/
+}
+
+
+/* Footer */
 footer{
 	padding: 20px;
 	margin-top: 20px;
