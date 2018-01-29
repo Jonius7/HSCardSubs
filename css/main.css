@@ -28,7 +28,7 @@ header {
 	color: #ffffff;
 	padding-top: 30px;
 	min-height: 70px;
-	border-bottom: #32a0c2 3px solid;
+	border-bottom: #e2df1f 3px solid;
 }
 header a {
 	color: #ffffff;
@@ -77,20 +77,25 @@ header a:hover {
 	font-size: 20px;
 }
 
-
-
-
 /* Icons */
+
 #testicons {
-	/*text-transform: uppercase;*/
+	background-color: #dddddd;
 }
 
+.seticon {
+	font-weight: bold;
+	height: 30px;
+	width: 60px;
+	border: 1px solid black;
+	font: Helvetica, Arial, sans-serif;
+}
 
 /* Footer */
 footer{
 	padding: 20px;
 	margin-top: 20px;
 	color: #000000;
-	background-color: #32a0c2;
+	background-color: #e2df1f;
 	text-align: center;
 }
