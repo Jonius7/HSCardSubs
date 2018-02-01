@@ -9,6 +9,18 @@ $(document).ready(function(){
         //$("#showwild").slideDown(400);
     });
 
+    $("#cardname").keyup(function(event) {
+        if (event.keyCode === 13) {
+            var cardname = $("#cardname").val();
+            $("#cardtitle").html(cardname);
+            try {
+                api_request_title(cardname);
+            } catch(err) {
+                console.log("Invalid Name: " + err);
+            }
+        }
+    });
+
     var similar = [
         {
             name: "Arcanologist",
@@ -48,6 +60,26 @@ $(document).ready(function(){
         });
         */
     });
+
+    function api_request_title(name) {
+        // returns a Javascript Object (converted from JSON object)
+        var obj;
+        $.ajax({
+            url: 'https://omgvamp-hearthstone-v1.p.mashape.com/cards/search/' + name, // The URL to the API. You can get this by clicking on "Show CURL example" from an API profile
+            type: 'GET', // The HTTP Method
+            //data: {}, // Additional parameters here
+            datatype: 'json',
+            success: function(data) {
+                //obj = JSON.stringify(data);
+                console.log(data);
+                retrieve_card(data);
+            },
+            error: function(err) { alert(err); },
+            beforeSend: function(xhr) {
+            xhr.setRequestHeader("X-Mashape-Authorization", "gLuJijYjismshLeMgpAkk4Vp3dUOp1vNL1djsnQVPYIKHuFOJV"); // Enter here your Mashape key
+            }
+        });
+    }
 
     function api_request(name) {
         // returns a Javascript Object (converted from JSON object)
@@ -151,6 +183,13 @@ $(document).ready(function(){
         
         
     }
+
+    function retrieve_card(data) {
+        $("#cardimg").attr("src", data[0].img);
+        var parsedtext = (data[0].text).replace("\\n", "<br>")
+        console.log(parsedtext);
+        $("#titledesc").html(parsedtext);
+    }
     function create_icons2(data) {
         console.log("DDE" + data[0]);
         var om = $.grep(seticons, function(e){return e.name == data[0].cardSet;});
@@ -163,7 +202,7 @@ $(document).ready(function(){
         $('#testicons > div:last').append('<div class="icon mana">' + data[0].cost +'</div>')
         .append('<div class="icon attack">' + data[0].attack + '</div>')
         .append('<div class="icon health">' + data[0].health + '</div>')
-        .append('<div class="cardname">' + data[0].name + '</div>')
+        .append('<div class="cardname">' + '<a href=#>' + data[0].name + '</a>' + '</div>')
         .append('<div class="carddesc">' + data[0].text + '</div>')
         .append('</div>')
         .append('<br>');
