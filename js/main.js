@@ -135,7 +135,7 @@ $(document).ready(function(){
     */
 
     function setup_requests() {
-        var order = ["Arcanologist", "Amani Berserker", "Beckoner of Evil"];
+        var order = ["Arcanologist", "Amani Berserker", "Beckoner of Evil", "Plated Beetle"];
         $.each(order, function(i, value) {
             api_request(value);
         });
@@ -163,7 +163,8 @@ $(document).ready(function(){
         $('#testicons > div:last').append('<div class="icon mana">' + data[0].cost +'</div>')
         .append('<div class="icon attack">' + data[0].attack + '</div>')
         .append('<div class="icon health">' + data[0].health + '</div>')
-        .append(data[0].name)
+        .append('<div class="cardname">' + data[0].name + '</div>')
+        .append('<div class="carddesc">' + data[0].text + '</div>')
         .append('</div>')
         .append('<br>');
 

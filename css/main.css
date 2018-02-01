@@ -6,7 +6,7 @@
 }
 
 body {
-	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	font: 15px/1.5 Helvetica, Arial, sans-serif;
 	padding: 0;
 	margin:0;
 	background-color: #f4f4f4;
@@ -86,35 +86,59 @@ header a:hover {
 
 .card {
 	float: none;
-	margin: 0 0 10px 0;
+	margin: 0 0 7px 0;
 }
 
 .icon {
 	float: left;
 	width: 60px;
-	height: 25px;
-	line-height: 25px;
+	height: 20px;
+	line-height: 20px;
+	margin: 0 2px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
 	
 }
 
 .icon.set {
 	border-radius: 7px;
-	font-family: Helvetica, Arial, sans-serif;
-	font-weight: bold;
 	
 	/*border: 1px solid black;*/
 }
 
 .icon.mana {
-	background-color: #50509B;
+	background-color: rgb(88, 88, 218);
+	width: 20px;
+	border-radius: 10px;
 }
 
 .icon.attack {
 	background-color: #FFFF56;
+	width: 20px;
+	border-radius: 10px;
 }
 
 .icon.health {
 	background-color: #FF4242;
+	width: 20px;
+	border-radius: 10px;
+}
+
+.cardname {
+	float: left;
+	width: 200px;
+	height: 20px;
+	line-height: 20px;
+	margin: 0 2px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.carddesc {
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	margin: 0 2px;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Footer */
