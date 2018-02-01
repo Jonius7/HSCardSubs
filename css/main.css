@@ -70,13 +70,22 @@ ul{
 }
 
 
-#cardimg, #titledesc{
+#cardimg, #titledesc {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
 	
 }
 
+.cardtile {
+	/*
+	background: linear-gradient(65deg,
+	#313109,
+	#313131 calc(100% - 96px),
+	rgba(49,49,49,0) calc(100% - 26px),
+	rgba(49,49,49,0))
+	*/
+}
 
 #similarcards {
 

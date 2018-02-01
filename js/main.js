@@ -188,7 +188,8 @@ $(document).ready(function(){
         $("#cardimg").attr("src", data[0].img);
         var parsedtext = (data[0].text).replace("\\n", "<br>")
         console.log(parsedtext);
-        $("#titledesc").html(parsedtext);
+        $("#titledesc").append(parsedtext);
+        $(".cardtile").attr("src", 'https://art.hearthstonejson.com/v1/tiles/' + data[0].cardId + '.png');
     }
     function create_icons2(data) {
         console.log("DDE" + data[0]);
