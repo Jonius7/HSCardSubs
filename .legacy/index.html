@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+        <!--https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json-->
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyBJ8gtcsBlx78XnOFNB-miIqFVUpxiaOPs",
+                authDomain: "hscardsubs.firebaseapp.com",
+                databaseURL: "https://hscardsubs.firebaseio.com",
+                projectId: "hscardsubs",
+                storageBucket: "",
+                messagingSenderId: "857213408745"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><i class=""></i> <span class="highlight">Hearthstone</span> Card Subs</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"><a href="#">Cards</a></li>
+                        <li><a href="#">Decks</a></li>
+                        <li><a href="#">Subs</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="cardpanel">
+            <div class="container">
+                <div id="cardinput">
+                    <label for="cardname">Type in the name of the card:</label>
+                    <input type="text" id="cardname" name="cardname"></input>
+                </div>
+
+                <h2 id="cardtitle">River Crocolisk</h2>
+                <div id="maincard">
+                    <img id="cardimg"></img>
+                    <div id="titledesc"><img class="cardtile"></img></div>
+                </div>
+                <div id="similarcards">
+                    <a href="#" id="link1">Similar Cards</a>
+                        <div id="output">
+
+                        </div>
+                        <div id="testicons">
+                            
+                        </div>
+                    <div id="showwild">
+                        Raven Idol
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>JH Web Design, Copyright &copy; 2017</p>
+        </footer>
+    </body>
+</html>
