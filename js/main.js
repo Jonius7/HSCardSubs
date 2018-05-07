@@ -27,6 +27,6 @@ var seticons = [
     {name: "Mean Streets of Gadgetzan", code: "MSG", color: "#526057"},
     {name: "Journey to Un'Goro", code: "UNG", color: "#A3D54F"},
     {name: "Knights of the Frozen Throne", code: "KFT", color: "#49c1ce"},
-    {name: "Kobolds & Catacombs", code: "KNC", color: "#ffb600"}
+    {name: "Kobolds & Catacombs", code: "KNC", color: "#ffb600"},
     {name: "The Witchwood", code: "TWW", color: "#ffb600"}
 ]
