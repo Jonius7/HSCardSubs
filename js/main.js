@@ -190,6 +190,7 @@ $(document).ready(function(){
         console.log(parsedtext);
         $("#titledesc").append(parsedtext);
         $(".cardtile").attr("src", 'https://art.hearthstonejson.com/v1/tiles/' + data[0].cardId + '.png');
+        //https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json
     }
     function create_icons2(data) {
         console.log("DDE" + data[0]);
