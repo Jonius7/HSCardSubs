@@ -59,12 +59,12 @@ $(document).ready(function(){
         */
 
 
-        var obj;
+        //var obj;
         $.ajax({
-            url: 'https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json', // The URL to the API. You can get this by clicking on "Show CURL example" from an API profile
-            type: 'GET', // The HTTP Method
+            url: 'https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json', 
+            //type: 'GET', // The HTTP Method
             //data: {}, // Additional parameters here
-            datatype: 'json',
+            datatype: 'jsonp',
             success: function(data) {
                 //obj = JSON.stringify(data);
                 console.log(data);
