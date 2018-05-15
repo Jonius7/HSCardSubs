@@ -34,8 +34,6 @@ $(document).ready(function(){
     api_request();
     function api_request() {
         /*
-
-
         // returns a Javascript Object (converted from JSON object)
         var obj;
         $.ajax({
@@ -53,32 +51,15 @@ $(document).ready(function(){
             xhr.setRequestHeader("X-Mashape-Authorization", "gLuJijYjismshLeMgpAkk4Vp3dUOp1vNL1djsnQVPYIKHuFOJV"); // Enter here your Mashape key
             }
         });
-
         */
 
         $.ajax({
-            url: 'https://api.hearthstonejson.com/v1/latest/enUS/cards.json', 
-            //type: 'GET', // The HTTP Method
-            //data: {}, // Additional parameters here
-            //datatype: 'json',
+            url: 'https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json', 
             success: function(data) {
-                //obj = JSON.stringify(data);
                 console.log(data);
                 console.log(data[0]);
-                //alert(data[1]);
-            },
-            //error: function(err) { alert(err); },
-            /*
-            beforeSend: function(xhr) {
-                xhr.setRequestHeader("Access-Control-Allow-Origin", "*"); // Enter here your Mashape key
-            }*/
+            }
         });
-
-        /*
-        $.getJSON("https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json", function(obj) {
-            console.log(obj.details.ProductID);
-        });
-        */
     }
 
 });
