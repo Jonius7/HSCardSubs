@@ -33,8 +33,8 @@ var seticons = [
 
 
 $(document).ready(function(){
-    api_request_title();
-    function api_request_title() {
+    api_request();
+    function api_request() {
         /*
 
 
@@ -60,24 +60,31 @@ $(document).ready(function(){
 
 
         //var obj;
-
+        /*
         var xhr = createCORSRequest('GET', 'https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json');
         if (!xhr) {
             console.log('CORS not supported');
             
         }
         console.log("green"+xhr.responseText);
+        */
 
         $.ajax({
             url: 'https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json', 
             //type: 'GET', // The HTTP Method
             //data: {}, // Additional parameters here
-            datatype: 'json',
+            //datatype: 'json',
             success: function(data) {
                 //obj = JSON.stringify(data);
                 console.log(data);
+                console.log(data[0]);
+                //alert(data[1]);
             },
-            error: function(err) { alert(err); }
+            //error: function(err) { alert(err); },
+            /*
+            beforeSend: function(xhr) {
+                xhr.setRequestHeader("Access-Control-Allow-Origin", "*"); // Enter here your Mashape key
+            }*/
         });
 
         /*
@@ -101,8 +108,4 @@ $(document).ready(function(){
         }
         return xhr;
     }
-      
-    
-
-
 });
