@@ -58,8 +58,24 @@ $(document).ready(function(){
 
         */
 
+
+        var obj;
+        $.ajax({
+            url: 'https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json', // The URL to the API. You can get this by clicking on "Show CURL example" from an API profile
+            type: 'GET', // The HTTP Method
+            //data: {}, // Additional parameters here
+            datatype: 'json',
+            success: function(data) {
+                //obj = JSON.stringify(data);
+                console.log(data);
+            },
+            error: function(err) { alert(err); },
+        });
+
+        /*
         $.getJSON("https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json", function(obj) {
             console.log(obj.details.ProductID);
         });
+        */
     }
 });
