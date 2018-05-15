@@ -30,3 +30,36 @@ var seticons = [
     {name: "Kobolds & Catacombs", code: "KNC", color: "#ffb600"},
     {name: "The Witchwood", code: "TWW", color: "#ffb600"}
 ]
+
+
+$(document).ready(function(){
+    api_request_title();
+    function api_request_title() {
+        /*
+
+
+        // returns a Javascript Object (converted from JSON object)
+        var obj;
+        $.ajax({
+            url: 'https://omgvamp-hearthstone-v1.p.mashape.com/cards/search/' + name, // The URL to the API. You can get this by clicking on "Show CURL example" from an API profile
+            type: 'GET', // The HTTP Method
+            //data: {}, // Additional parameters here
+            datatype: 'json',
+            success: function(data) {
+                //obj = JSON.stringify(data);
+                console.log(data);
+                retrieve_card(data);
+            },
+            error: function(err) { alert(err); },
+            beforeSend: function(xhr) {
+            xhr.setRequestHeader("X-Mashape-Authorization", "gLuJijYjismshLeMgpAkk4Vp3dUOp1vNL1djsnQVPYIKHuFOJV"); // Enter here your Mashape key
+            }
+        });
+
+        */
+
+        $.getJSON("https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json", function(obj) {
+            console.log(obj.details.ProductID);
+        });
+    }
+});
