@@ -2,8 +2,6 @@
 
 
 
-
-
 var raritytable = [
     {name: "Free", color: "#3c3c3c"},
     {name: "Common", color: "#f6f6f6"},
@@ -58,19 +56,8 @@ $(document).ready(function(){
 
         */
 
-
-        //var obj;
-        /*
-        var xhr = createCORSRequest('GET', 'https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json');
-        if (!xhr) {
-            console.log('CORS not supported');
-            
-        }
-        console.log("green"+xhr.responseText);
-        */
-
         $.ajax({
-            url: 'https://api.hearthstonejson.com/v1/latest/enUS/cards.collectible.json', 
+            url: 'https://api.hearthstonejson.com/v1/latest/enUS/cards.json', 
             //type: 'GET', // The HTTP Method
             //data: {}, // Additional parameters here
             //datatype: 'json',
@@ -94,18 +81,4 @@ $(document).ready(function(){
         */
     }
 
-    function createCORSRequest(method, url) {
-        var xhr = new XMLHttpRequest();
-        if ("withCredentials" in xhr) {
-            xhr.open(method, url, true);      
-        } else if (typeof XDomainRequest != "undefined") {
-            xhr = new XDomainRequest();
-            xhr.open(method, url);
-      
-        } else {
-            xhr = null;
-      
-        }
-        return xhr;
-    }
 });
