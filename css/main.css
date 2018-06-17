@@ -1,4 +1,102 @@
-
-.cardtile {
-    
+.set {
+    background: #f0f1f4;
+    border-radius: .1rem;
+    font-weight: bold;
+    color: #5b657a;
+    display: inline-block; 
+    line-height: 1.2;
+    width: 3.5em;
+    padding: .1rem .15rem;
+    margin: 0;
+    text-align: center;
 }
+
+.set.set-basic {
+    background: #CECECE;
+    color: #111;
+}
+
+.set.set-clas {
+    background: #9E562C;
+    color: #fff;
+}
+
+.set.set-hof {
+    background: #e68a00;
+    color: #111;
+}
+
+.set.set-naxx {
+    background: #1C702D;
+    color: #fff;
+}
+
+.set.set-gvg {
+    background: #c79818;
+    color: #111;
+}
+
+.set.set-brm {
+    background: #f52b07;
+    color: #111;
+}
+
+.set.set-tgt {
+    background: #CFB6E3;
+    color: #111;
+}
+
+.set.set-loe {
+    background: #F5CF5F;
+    color: #111;
+}
+
+.set.set-wog {
+    background: #CE6190;
+    color: #111;
+}
+
+.set.set-kara {
+    background: #C325CE;
+    color: #111;
+}
+
+.set.set-msg {
+    background: #526057;
+    color: #fff;
+}
+
+.set.set-ung {
+    background: #A3D54F;
+    color: #111;
+}
+
+.set.set-kft {
+    background: #07DEFA;
+    color: #111;
+}
+
+.set.set-knc {
+    background: #FFB600;
+    color: #111;
+}
+.set.set-tww {
+    background: #8BF7A4;
+    color: #111;
+}
+
+a.tooltip2 {outline:none; }
+a.tooltip2 strong {line-height:30px;}
+a.tooltip2:hover {text-decoration:none;} 
+a.tooltip2 span {
+    z-index:10;display:none; padding:14px 20px;
+    margin-top:20px; margin-left:-240px;
+    width:200px; line-height:16px;
+}
+a.tooltip2:hover span{
+    display:inline; position:absolute; 
+}
+
+.callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;}
+    
+/*CSS3 extras*/
