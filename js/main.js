@@ -100,11 +100,11 @@ function find_card(name) {
 }
 
 function get_image_tooltip () {
-    $(".tooltip2").each(function(name) {
+    $(".carditem").each(function(name) {
         var this_card = $(this).text();
         this_card_obj = find_card(this_card);
         $(this).html(
-            '<a class="tooltip2">' + this_card + '<span><img class="callout img-responsive" src="https://art.hearthstonejson.com/v1/render/latest/enUS/512x/'+ this_card_obj.id + '.png"></img></span> </a>');
+            '<span class="cardtile" style="background-image: url(https://art.hearthstonejson.com/v1/tiles/'+ this_card_obj.id + '.png);"></span>' + '<a class="tooltip2">' + this_card + '<span><img class="callout img-responsive" src="https://art.hearthstonejson.com/v1/render/latest/enUS/512x/'+ this_card_obj.id + '.png"></img></span> </a>');
     });
 }
 
