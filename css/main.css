@@ -113,4 +113,35 @@ a.tooltip2:hover span{
 }
 
 
+/* Rarities */
+.free {
+    font-weight: bold;
+    color: #000000;
+    /*text-shadow: 0 0 2px #ffa53e, 0 0 2px #683903;*/
+}
+
+.common {
+    font-weight: bold;
+    color: #0FAF03;
+    /*text-shadow: 0 0 2px #111111, 0 0 2px #111111;*/
+}
+
+.rare {
+    font-weight: bold;
+    color: #2570e5;
+    /*text-shadow: 0 0 2px #5391e2, 0 0 2px #0842e2;*/
+}
+
+.epic {
+    font-weight: bold;
+    color: #8f2aac;
+    /*text-shadow: 0 0 2px #ab79ec, 0 0 2px #7407f1;*/
+}
+
+.legendary {
+    font-weight: bold;
+    color: #d08d0b;
+    /*text-shadow: 0 0 2px #ead7ac, 0 0 2px #ffa500;*/
+}
+
 /*CSS3 extras*/

@@ -102,12 +102,13 @@ function find_card(name) {
 function get_image_tooltip () {
     $(".carditem").each(function(name) {
         var this_card = $(this).text();
-        this_card_obj = find_card(this_card);
+        this_card_obj = find_card(this_card);        
         $(this).html(
-            '<span class="cardtile" style="background-image: url(https://art.hearthstonejson.com/v1/tiles/'+ this_card_obj.id + '.png);"></span>' + '<a class="tooltip2">' + this_card + '<span><img class="callout img-responsive" src="https://art.hearthstonejson.com/v1/render/latest/enUS/512x/'+ this_card_obj.id + '.png"></img></span> </a>');
+            '<span class="cardtile" style="background-image: url(https://art.hearthstonejson.com/v1/tiles/'+ this_card_obj.id + '.png);"></span>' 
+            + '<a class="tooltip2 ' + this_card_obj.rarity.toLowerCase() + '">' + this_card 
+            + '<span><img class="callout img-responsive" src="https://art.hearthstonejson.com/v1/render/latest/enUS/512x/'+ this_card_obj.id + '.png"></img></span> </a>');
     });
 }
-
 
 druid_staples = ["Druid of the Swarm", "Power of the Wild", "Crypt Lord", ""];
 "<tr><td></td></tr>"
