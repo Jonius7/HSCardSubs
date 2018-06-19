@@ -41,6 +41,11 @@ $(document).ready(function(){
             }
         }
     });
+    /*
+    $("h3:contains('Staples')" ).css("text-decoration", "underline");
+    $("h3:contains('Deck Staples')" ).css("text-decoration", "underline");
+    $("h3:contains('Good')" ).css("text-decoration", "underline");
+    */
 });
 
 
@@ -106,7 +111,8 @@ function get_image_tooltip () {
         $(this).html(
             '<span class="cardtile" style="background-image: url(https://art.hearthstonejson.com/v1/tiles/'+ this_card_obj.id + '.png);"></span>' 
             + '<a class="tooltip2 ' + this_card_obj.rarity.toLowerCase() + '">' + this_card 
-            + '<span><img class="callout img-responsive" src="https://art.hearthstonejson.com/v1/render/latest/enUS/512x/'+ this_card_obj.id + '.png"></img></span> </a>');
+            + '<span><img class="callout img-responsive" src="https://art.hearthstonejson.com/v1/render/latest/enUS/512x/'+ this_card_obj.id + '.png"></img></span>' 
+            + '</a>');
     });
 }
 
