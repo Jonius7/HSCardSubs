@@ -12,28 +12,60 @@
     </head>
     <body>
         <h1>Staple Cards</h1>
+        <p>Back to home page: <a href="index.html">Home</a></p>
+
         <div class="columns">
             <div class="column col-1"></div>
             <div class="column col-6">
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
-                        <th>Set</th>
-                        <th>Release Date</th>
-                        <th>Cards</th>
+                        <th>Rating</th>
+                        <th>Description</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="active">
-                            <td><span class="set set-basic">BASIC</span> Basic Set</td>
-                            <td>April 2017</td>
-                            <td>135</td>
+                        <tr>
+                            <td><span>Staples</td>
+                            <td>Amazing, top tier general staple across multiple decks</td>
                         </tr>
-                        <tr class="active">
-                            <td><span class="set set-ung">UNG</span> Journey to Un'Goro</td>
-                            <td>April 2017</td>
-                            <td>135</td>
+                        <tr>
+                            <td>Deck Staples</td>
+                            <td>Core cards in particular deck archetypes</td>
                         </tr>
+                        <tr>
+                            <td>Good</td>
+                            <td>Good cards not currently in core of popular decks, or previous deck staples</td>
+                        </tr>
+                        <tr>
+                            <td>Former</td>
+                            <td>Cards that used to be deck staples, but fallen out of favour. May return in the future.</td>
+                        </tr>
+                        <tr>
+                            <td>Casual</td>
+                            <td>Cards great for limited collections (new players), not really seen in top tier decks</td>
+                        </tr>
+                        <tr>
+                            <td>Deck Enabler</td>
+                            <td>Specialised cards, not essential to certain deck archetypes, but can add in</td>
+                        </tr>
+                        <tr>
+                            <td>Meh</td>
+                            <td>Cards that don't see play, kinda mediocre</td>
+                        </tr>
+                        <tr>
+                            <td>Meme</td>
+                            <td>Fun cards, not so much for competitive decks</td>
+                        </tr>
+                        <tr>
+                            <td>Bad</td>
+                            <td>Not so great cards, but who knows, in the future. Dust at your own risk.</td>
+                        </tr>
+                        <tr>
+                            <td>Trash</td>
+                            <td>Will never be good, or easily replacable. Dust.</td>
+                        </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -42,6 +74,8 @@
             <div class="column col-2">
             </div>
         </div>
+
+
 
         <div class="columns">
             <div class="column col-1"></div>
@@ -54,32 +88,35 @@
         <div class="columns">
             <div class="column col-1"></div>
             <div class="column col-7">
-                <input type="radio" id="tab1" name="tabs" class="tab-locator" hidden checked />
-                <input type="radio" id="tab2" name="tabs" class="tab-locator" hidden />
-                <input type="radio" id="tab3" name="tabs" class="tab-locator" hidden />
-                <input type="radio" id="tab4" name="tabs" class="tab-locator" hidden />
-                <input type="radio" id="tab5" name="tabs" class="tab-locator" hidden />
-                <input type="radio" id="tab6" name="tabs" class="tab-locator" hidden />
-                <input type="radio" id="tab7" name="tabs" class="tab-locator" hidden />
-                <input type="radio" id="tab8" name="tabs" class="tab-locator" hidden />
-                <input type="radio" id="tab9" name="tabs" class="tab-locator" hidden />
+                <input type="radio" id="ung-tab1" name="tabs" class="tab-locator" hidden checked />
+                <input type="radio" id="ung-tab2" name="tabs" class="tab-locator" hidden />
+                <input type="radio" id="ung-tab3" name="tabs" class="tab-locator" hidden />
+                <input type="radio" id="ung-tab4" name="tabs" class="tab-locator" hidden />
+                <input type="radio" id="ung-tab5" name="tabs" class="tab-locator" hidden />
+                <input type="radio" id="ung-tab6" name="tabs" class="tab-locator" hidden />
+                <input type="radio" id="ung-tab7" name="tabs" class="tab-locator" hidden />
+                <input type="radio" id="ung-tab8" name="tabs" class="tab-locator" hidden />
+                <input type="radio" id="ung-tab9" name="tabs" class="tab-locator" hidden />
 
                 <ul class="tab tab-block">
-                    <li class="tab-item"><label for="tab1"><span class="classtile druid"></span><a><h5>Druid</h5></a></label></li>
-                    <li class="tab-item"><label for="tab2"><span class="classtile hunter"></span><a><h5>Hunter</h5></a></label></li>		
-                    <li class="tab-item"><label for="tab3"><span class="classtile mage"></span><a><h5>Mage</h5></a></label></li>
-                    <li class="tab-item"><label for="tab4"><span class="classtile paladin"></span><a><h5>Paladin</h5></a></label></li>
-                    <li class="tab-item"><label for="tab5"><span class="classtile priest"></span><a><h5>Priest</h5></a></label></li>
-                    <li class="tab-item"><label for="tab6"><span class="classtile rogue"></span><a><h5>Rogue</h5></a></label></li>
-                    <li class="tab-item"><label for="tab7"><span class="classtile shaman"></span><a><h5>Shaman</h5></a></label></li>
-                    <li class="tab-item"><label for="tab8"><span class="classtile warlock"></span><a><h5>Warlock</h5></a></label></li>
-                    <li class="tab-item"><label for="tab9"><span class="classtile warrior"></span><a><h5>Warrior</h5></a></label></li>
+                    <li class="tab-item"><label for="ung-tab1"><span class="classtile druid"></span><a><h5>Druid</h5></a></label></li>
+                    <li class="tab-item"><label for="ung-tab2"><span class="classtile hunter"></span><a><h5>Hunter</h5></a></label></li>		
+                    <li class="tab-item"><label for="ung-tab3"><span class="classtile mage"></span><a><h5>Mage</h5></a></label></li>
+                    <li class="tab-item"><label for="ung-tab4"><span class="classtile paladin"></span><a><h5>Paladin</h5></a></label></li>
+                    <li class="tab-item"><label for="ung-tab5"><span class="classtile priest"></span><a><h5>Priest</h5></a></label></li>
+                    <li class="tab-item"><label for="ung-tab6"><span class="classtile rogue"></span><a><h5>Rogue</h5></a></label></li>
+                    <li class="tab-item"><label for="ung-tab7"><span class="classtile shaman"></span><a><h5>Shaman</h5></a></label></li>
+                    <li class="tab-item"><label for="ung-tab8"><span class="classtile warlock"></span><a><h5>Warlock</h5></a></label></li>
+                    <li class="tab-item"><label for="ung-tab9"><span class="classtile warrior"></span><a><h5>Warrior</h5></a></label></li>
                 </ul>
                 
                 <div class="tabs">
                     <div class="tab-content">
                         <h3>Deck Staples</h3>
                         <div class="carditem">Earthen Scales</div>
+                        <h3>Good</h3>
+                        <div class="carditem">Tortollan Forager</div>
+                        <div class="carditem">Living Mana</div>
                     </div>
                     
                     <div class="tab-content">
@@ -108,6 +145,62 @@
                         <div class="carditem">Open the Waygate</div>
                         <div class="carditem">Molten Reflection</div>
                     </div>
+                    <div class="tab-content">
+                        <h3>Staples</h3>
+                        <div class="carditem">Hydrologist</div>
+                        <div class="carditem">Spikeridged Steed</div>
+                        <div class="carditem">Sunkeeper Tarim</div>
+                        <h3>Deck Staples</h3>
+                        <div class="carditem">Lost in the Jungle</div>
+                        <div class="carditem">Lightfused Stegodon</div>
+                        <div class="carditem">Vinecleaver</div>
+                    </div>
+                    <div class="tab-content">
+                        <h3>Staples</h3>
+                        <div class="carditem">Radiant Elemental</div>
+                        <div class="carditem">Shadow Visions</div>
+                        <h3>Deck Staples</h3>
+                        <div class="carditem">Free From Amber</div>
+                        <div class="carditem">Lyra the Sunshard</div>
+                        <h3>Good</h3>
+                        <div class="carditem">Curious Glimmerroot</div>
+                        <div class="carditem">Crystalline Oracle</div>
+                        <h3>Casual</h3>
+                        <div class="carditem">Binding Heal</div>
+                    </div>
+                    <div class="tab-content">
+                        <h3>Staples</h3>
+                        <div class="carditem">Vilespine Slayer</div>
+                        <h3>Deck Staples</h3>
+                        <div class="carditem">The Caverns Below</div>
+                        <h3>Good</h3>
+                        <div class="carditem">Hallucination</div>
+                        <h3>Former</h3>
+                        <div class="carditem">Sherazin, Corpse Flower</div>
+                        <h3>Trash</h3>
+                        <div class="carditem">Biteweed</div>
+                    </div>
+                    <div class="tab-content">
+                        <h3>Deck Staples</h3>
+                        <div class="carditem">Primalfin Totem</div>
+                        <div class="carditem">Volcano</div>
+                        <h3>Good</h3>
+                        <div class="carditem">Hot Spring Guardian</div>
+                        <div class="carditem">Fire Plume Harbinger</div>
+                        <div class="carditem">Kalimos, Primal Lord</div>
+                        <h3>Casual</h3>
+                        <div class="carditem">Tidal Surge</div>                        
+                    </div>
+                    <div class="tab-content">
+                        <h3>Casual</h3>
+                        <div class="carditem">Ravenous Pterrordax</div>
+                        <div class="carditem">Feeding Time</div>
+                        <div class="carditem">Chittering Tunneler</div>
+                    </div>
+                    <div class="tab-content">
+                        <h3>Deck Staples</h3>
+                        <div class="carditem">Corpsetaker</div>
+                    </div>
                 </div>
             </div>
             <div class="columns col-2">
@@ -118,11 +211,21 @@
                 </ul>
                 <div>
                     <div>
+                        <h3>Staples</h3>
+                        <div class="carditem">Fire Fly</div>
+                        <div class="carditem">Glacial Shard</div>
+                        <div class="carditem">Tar Creeper</div>
+                        <div class="carditem">Stonehill Defender</div>
                         <h3>Deck Staples</h3>
-                        <div class="carditem">Earthen Scales</div>
+                        <div class="carditem">Rockpool Hunter</div>
+                        <div class="carditem">Gentle Megasaur</div>
+                        <div class="carditem">Blazecaller</div>
                         <h3>Good</h3>
-                        <div class="carditem">Tortollan Forager</div>
-                        <div class="carditem">Living Mana</div>
+                        <div class="carditem">Fire Plume Phoenix</div>
+                        <div class="carditem">Golakka Crawler</div>
+                        <div class="carditem">Bittertide Hydra</div>
+                        <div class="carditem">Elise the Trailblazer</div>
+                        <div class="carditem">Gluttonous Ooze</div>
                     </div>
                 </div>
             </div>
@@ -132,7 +235,7 @@
 
         <div class="columns">
                 <div class="column col-1"></div>
-                <div class="column col-6">
+                <div class="column col-7">
                     <br>
                     <h2><span class="set set-kft">KFT</span> <strong>Knights of the Frozen Throne</strong></h2>
                 </div>
@@ -141,40 +244,86 @@
             <div class="columns">
                 <div class="column col-1"></div>
                 <div class="column col-7">
-                    <input type="radio" id="tab1" name="tabs" class="tab-locator" hidden checked />
-                    <input type="radio" id="tab2" name="tabs" class="tab-locator" hidden />
-                    <input type="radio" id="tab3" name="tabs" class="tab-locator" hidden />
-                    <input type="radio" id="tab4" name="tabs" class="tab-locator" hidden />
-                    <input type="radio" id="tab5" name="tabs" class="tab-locator" hidden />
-                    <input type="radio" id="tab6" name="tabs" class="tab-locator" hidden />
-                    <input type="radio" id="tab7" name="tabs" class="tab-locator" hidden />
-                    <input type="radio" id="tab8" name="tabs" class="tab-locator" hidden />
-                    <input type="radio" id="tab9" name="tabs" class="tab-locator" hidden />
+                    <input type="radio" id="kft-tab1" name="tabs" class="tab-locator" hidden checked />
+                    <input type="radio" id="kft-tab2" name="tabs" class="tab-locator" hidden />
+                    <input type="radio" id="kft-tab3" name="tabs" class="tab-locator" hidden />
+                    <input type="radio" id="kft-tab4" name="tabs" class="tab-locator" hidden />
+                    <input type="radio" id="kft-tab5" name="tabs" class="tab-locator" hidden />
+                    <input type="radio" id="kft-tab6" name="tabs" class="tab-locator" hidden />
+                    <input type="radio" id="kft-tab7" name="tabs" class="tab-locator" hidden />
+                    <input type="radio" id="kft-tab8" name="tabs" class="tab-locator" hidden />
+                    <input type="radio" id="kft-tab9" name="tabs" class="tab-locator" hidden />
     
                     <ul class="tab tab-block">
-                        <li class="tab-item"><label for="tab1"><span class="classtile druid"></span><a><h5>Druid</h5></a></label></li>
-                        <li class="tab-item"><label for="tab2"><span class="classtile hunter"></span><a><h5>Hunter</h5></a></label></li>		
-                        <li class="tab-item"><label for="tab3"><span class="classtile mage"></span><a><h5>Mage</h5></a></label></li>
-                        <li class="tab-item"><label for="tab4"><span class="classtile paladin"></span><a><h5>Paladin</h5></a></label></li>
-                        <li class="tab-item"><label for="tab5"><span class="classtile priest"></span><a><h5>Priest</h5></a></label></li>
-                        <li class="tab-item"><label for="tab6"><span class="classtile rogue"></span><a><h5>Rogue</h5></a></label></li>
-                        <li class="tab-item"><label for="tab7"><span class="classtile shaman"></span><a><h5>Shaman</h5></a></label></li>
-                        <li class="tab-item"><label for="tab8"><span class="classtile warlock"></span><a><h5>Warlock</h5></a></label></li>
-                        <li class="tab-item"><label for="tab9"><span class="classtile warrior"></span><a><h5>Warrior</h5></a></label></li>
+                        <li class="tab-item"><label for="kft-tab1"><span class="classtile druid"></span><a><h5>Druid</h5></a></label></li>
+                        <li class="tab-item"><label for="kft-tab2"><span class="classtile hunter"></span><a><h5>Hunter</h5></a></label></li>		
+                        <li class="tab-item"><label for="kft-tab3"><span class="classtile mage"></span><a><h5>Mage</h5></a></label></li>
+                        <li class="tab-item"><label for="kft-tab4"><span class="classtile paladin"></span><a><h5>Paladin</h5></a></label></li>
+                        <li class="tab-item"><label for="kft-tab5"><span class="classtile priest"></span><a><h5>Priest</h5></a></label></li>
+                        <li class="tab-item"><label for="kft-tab6"><span class="classtile rogue"></span><a><h5>Rogue</h5></a></label></li>
+                        <li class="tab-item"><label for="kft-tab7"><span class="classtile shaman"></span><a><h5>Shaman</h5></a></label></li>
+                        <li class="tab-item"><label for="kft-tab8"><span class="classtile warlock"></span><a><h5>Warlock</h5></a></label></li>
+                        <li class="tab-item"><label for="kft-tab9"><span class="classtile warrior"></span><a><h5>Warrior</h5></a></label></li>
                     </ul>
                     
                     <div class="tabs">
                         <div class="tab-content">
                             <h3>Deck Staples</h3>
+                            <div class="carditem">Earthen Scales</div>
+                            <h3>Good</h3>
+                            <div class="carditem">Tortollan Forager</div>
+                            <div class="carditem">Living Mana</div>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <h3>Staples</h3>
+                            <div class="carditem">Crackling Razormaw</div>
+                            <h3>Deck Staples</h3>
+                            <h3>Good</h3>
+                            <div class="carditem">Jeweled Macaw</div>
+                            <h3>Casual</h3>
+                            <div class="carditem">Grievous Bite</div>
+                            <div class="carditem">Raptor Hatchling</div>
+                        </div>
+                        
+                        <div class="tab-content">
+                            <h3>Staples</h3>
+                            <div class="carditem">Arcanologist</div>
+                            <div class="carditem">Primordial Glyph</div>
+                            <h3>Deck Staples</h3>
+                            <div class="carditem">Steam Surger</div>
+                            <div class="carditem">Meteor</div>
+                            <h3>Good</h3>
+                            <div class="carditem">Pyros</div>
+                            <h3>Casual</h3>
+                            <div class="carditem">Flame Geyser</div>
+                            <h3>Former</h3>
+                            <div class="carditem">Open the Waygate</div>
+                            <div class="carditem">Molten Reflection</div>
+                        </div>
+                        <div class="tab-content">
+                            <h3>Deck Staples</h3>
                             <div class="carditem">Corpsetaker</div>
                         </div>
-                        
                         <div class="tab-content">
-                            <h3>Staples</h3>
+                            <h3>Deck Staples</h3>
+                            <div class="carditem">Corpsetaker</div>
                         </div>
-                        
                         <div class="tab-content">
-                            <h3>Staples</h3>
+                            <h3>Deck Staples</h3>
+                            <div class="carditem">Corpsetaker</div>
+                        </div>
+                        <div class="tab-content">
+                            <h3>Deck Staples</h3>
+                            <div class="carditem">Corpsetaker</div>
+                        </div>
+                        <div class="tab-content">
+                            <h3>Deck Staples</h3>
+                            <div class="carditem">Corpsetaker</div>
+                        </div>
+                        <div class="tab-content">
+                            <h3>Deck Staples</h3>
+                            <div class="carditem">Corpsetaker</div>
                         </div>
                     </div>
                 </div>
@@ -186,11 +335,7 @@
                     </ul>
                     <div>
                         <div>
-                            <h3>Deck Staples</h3>
-                            <div class="carditem">Earthen Scales</div>
-                            <h3>Good</h3>
-                            <div class="carditem">Tortollan Forager</div>
-                            <div class="carditem">Living Mana</div>
+                            <div class="carditem">Corpsetaker</div>
                         </div>
                     </div>
                 </div>
