@@ -150,7 +150,7 @@ a.tooltip2:hover span{
     background-image: url(https://hsreplay.net/static/images/class-icons/warrior.png);
 }
 .classtile.neutral{
-    /*background-image: url(https://hsreplay.net/static/images/class-icons/neutral.png);*/
+    background-image: url(https://hsreplay.net/static/images/class-icons/neutral.png);
 }
 
 
@@ -197,6 +197,37 @@ a.tooltip2:hover span{
 
 .tab-content {
     display: none;
+}
+
+.neutral-tab {
+    border-bottom: .05rem solid #e7e9ed;
+    margin: .2rem 12rem .17rem 0;
+    display:flex;
+    flex-wrap:wrap;
+    list-style: none;
+    align-items: center;
+    padding-bottom: 0.1rem;
+    max-height: 74px;
+}
+.neutral-tab-item {
+    margin-top: 0;
+    text-align: center;
+}
+
+.neutral-tab-item a {
+    color: inherit;
+    border-bottom: .1rem solid transparent;
+}
+.neutral-tab-item a:hover {
+    color: #5755d9;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.neutral-tab-content {
+    display:block;
+    float:right;
+    clear:both;
 }
 
 .tab-locator:nth-of-type(1):checked ~ .tab-block > .tab-item:nth-of-type(9n+1) > label > a,
