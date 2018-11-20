@@ -41,6 +41,19 @@ $(document).ready(function(){
             }
         }
     });
+
+    $(".tab-block li").click(function() {
+        console.log("You Clicked ");
+        /*
+        $(this).parent().parent().find(".tab-item").hide();
+        var selected_tab = $(this).find("label").attr("for");
+        $(selected_tab).fadeIn();
+        $(this).parent().find("li").removeClass('current');
+        $(this).addClass("current");
+        return false;
+        */
+    });
+
     /*
     $("h3:contains('Staples')" ).css("text-decoration", "underline");
     $("h3:contains('Deck Staples')" ).css("text-decoration", "underline");
